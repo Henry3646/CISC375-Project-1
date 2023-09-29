@@ -1,0 +1,57 @@
+.Project-List{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    gap: 1rem;
+    
+}
+
+.project-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    
+    width: 80rem;
+
+    
+}
+
+.item-left{
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.item-right{
+    width: 60%;
+}
+
+img {
+    float: left;
+    width:  20rem;
+    height: 11rem;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 950px) {
+    .project-item{
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+    .item-right{
+        width: 100%;
+    }
+
+    .item-left{
+        width: 100%;
+    }
+
+    .Project-List{
+        padding: 0rem;
+    }
+}

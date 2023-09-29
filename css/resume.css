@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12rem;
+    gap: 15rem;
+}
+
+.section{
+    width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .container{
+        flex-direction: column;
+        padding: 2rem;
+        gap: 5rem;
+    }
+}
